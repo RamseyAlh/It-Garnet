@@ -1,0 +1,33 @@
+/* ------- Course Homepage Stylesheet ------- */
+/* Type Selector */
+body{
+    background-color: teal;
+}
+
+/* ID selector */
+
+#main-heading{
+color: goldenrod;
+font-size: 60px;
+text-align: center;
+}
+
+/* Class Selector */
+
+.primary{
+    font-size: 25px;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin: 15px;
+}
+
+/* psuedo selector */
+
+a:link, a:visited{
+    color: ivory;
+    text-decoration: none;
+}
+
+li{
+    margin-bottom: 9px;
+}
