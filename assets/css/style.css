@@ -1,7 +1,10 @@
 /* ------- Course Homepage Stylesheet ------- */
+
 /* Type Selector */
 body{
     background-color: teal;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* ID selector */

@@ -1,0 +1,36 @@
+/* color theme
+#348888
+#22BABB
+#9EF8EE
+#FA7F08
+#F24405
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* Global */
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Slab', serif; 
+  background-color: #348888;
+  color: white;
+}
+
+main {
+  background-color: white;
+  width: 80vw;
+  color:black;
+  margin:2% auto;
+  padding: 1.5%;
+  border: 10px solid #22BABB;
+}
+
