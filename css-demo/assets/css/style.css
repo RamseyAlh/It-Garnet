@@ -16,7 +16,11 @@ html {
   *:after {
     box-sizing: inherit;
   }
-
+/* utlity */
+.container {
+  margin: auto;
+  padding: 40px;
+}
   /* Global */
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -33,4 +37,77 @@ main {
   padding: 1.5%;
   border: 10px solid #22BABB;
 }
+
+header.primary{
+  background-color:#8fbdd9;
+  background-image: url("https://assets.codepen.io/7248/bg_1.png");
+  /* Local Path
+    background-image: url("../img/bg_1.png")
+  */  
+  background-size:cover;
+  background-repeat:no-repeat;
+  padding:20px; 
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  border-bottom:3px solid #104d73;
+}
+
+header.primary .hgroup{
+  width:70%;
+}
+
+.hgroup h1, .hgroup h2{
+  margin:0;
+}
+
+header.primary .hgroup h1 a{
+  color:white;
+  text-decoration:none;
+  text-shadow:1px 1px #000000;
+  font-size:2.6rem;
+}
+
+header.primary .hgroup h2{
+  color:#ffffff;
+  text-shadow:1px 1px #000000;
+  font-size:1.8em;
+  line-height:1.1
+}
+
+header.primary nav {
+  width:30%;
+  margin:0;
+}
+
+header.primary nav ul{
+  list-style-type:none;
+  margin:0;
+}
+
+header.primary nav ul li{
+  margin-bottom:10px;
+}
+
+header.primary nav a{
+  color:#fff;
+  text-decoration:none;
+  text-align: center;
+  background-color:rgba(0,0,0,.6);
+  display:block;
+  padding: 10px;
+  border-radius: 20px 0;
+  border:1px solid #9EF8EE;
+  border-right:10px solid #9EF8EE;
+  text-align:right;
+}
+
+#content h2, #content h3{
+  color: #9EF8EE;
+  border-left:7.5px solid #FA7F08;
+  border-radius: 15px 0;
+  padding: 8px;
+}
+
+
 
