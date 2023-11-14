@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>New Patient Registration</h1>
+    <p></p>
     <form id="form" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" size="30" maxlength="30"><br>
@@ -21,7 +23,7 @@
         <input type="text" id="lastname" name="lastname" size="30" maxlength="30"><br>
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" size="30" maxlength="30"><br>
-        <label for="sex">Sex:</label>
+        <label >Sex:</label>
         <label for="male"><input type="radio" name="male" id="male" value="M">Male</label>
         <label for="female"><input type="radio" name="female" id="female" value="F">Female</label>
         <label for="n/a"><input type="radio" name="n/a" id="n/a" value="N">N/A</label><br>
@@ -45,7 +47,7 @@
         </select><br>
         <label for="address">Address:</label>
         <input type="text" id="address" name="address" size="30" maxlength="30"><br>
-        <label for="city/state/zip">City/State/Zip:</label><input type="text" id="city" name="city" size="30" maxlength="30">
+        <label>City/State/Zip:</label><input type="text" id="city" name="city" size="30" maxlength="30">
         <select>
             <option value="">Select a State...</option>
             <option value="AL">Alabama</option>
@@ -102,11 +104,11 @@
         </select>
         <input type="text" id="zip" name="zip" size="5" maxlength="5">
         <hr>
-        <label for="medications">Medications:</label>
+        <label >Medications:</label>
         <label for="yes"><input type="radio" name="Medications" id="yes" value="Y">Yes</label>
         <label for="no"><input type="radio" name="Medications" id="no" value="N">No</label><br>
-        <label for="medicationlist">If Yes, List Medications Here:</label>
-        <input type="text" name="Medicationslist" id="medicationlist" rows="3" cols="30">
+        <label>If Yes, List Medications Here:</label>
+        <textarea name="Medicationslist" rows="3" cols="30"> </textarea>
         <hr>
         <input type="submit" value="Submit Patient Form" name="submitbutton">
     </form>
