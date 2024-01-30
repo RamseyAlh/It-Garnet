@@ -24,6 +24,11 @@ text-align: center;
     margin: 15px;
 }
 
+h2{
+    color: ivory;
+    margin: 9px;
+    padding-left: 7px;
+}
 /* psuedo selector */
 
 a:link, a:visited{
@@ -33,4 +38,8 @@ a:link, a:visited{
 
 li{
     margin-bottom: 9px;
+}
+
+li::marker{
+    color: ivory;
 }
