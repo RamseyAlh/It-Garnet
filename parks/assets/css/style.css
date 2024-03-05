@@ -25,18 +25,21 @@ img{
     background-image: url(../img/topography.svg);
     background-size: cover;
     background-repeat: inherit;
+    margin: 0;
   }
 
   article.park{
     background-color: white;
     color: black;
     opacity: 1;
+    position: absolute;
   }
 
   article.park figure{
     float: left;
     clear: right;
     display: flex;
+    
   }
 
   article.park h3{
@@ -44,22 +47,27 @@ img{
   }
   header.primary{
     background-color: green;
-    padding: 15px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
   } 
-  header.primary nav {
-    width:30%;
+  header.primary nav ul{
+    list-style: none;
     margin:0;
-    float:right;
-    clear: both;
+    padding: 0;
+    display: flex;
+    vertical-align: middle;
+  }
+  header.primary nav li{
+    padding-left: 1rem;
   }
 
-  header.primary nav ul{
-    list-style-type: none;
-    margin:0;
-  }
-  header.primary nav a{
-    text-align: right;
-  }
   h2{
     text-align: center;
+  }
+
+  footer{
+    flex-direction: column;
   }
