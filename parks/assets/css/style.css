@@ -33,26 +33,40 @@ img{
     color: black;
     opacity: 1;
     position: absolute;
+    margin-right: 2rem;
+    padding-right: 1rem;
+    border: 10px;
+    border-style: dashed;
+    border-color: #023020;
   }
 
   article.park figure{
     float: left;
     clear: right;
     display: flex;
-    
+    margin-left: 1rem;
+    border-color: black;
+    border: 5px;
+    border-style: solid;
   }
 
   article.park h3{
     text-align: center;
   }
   header.primary{
-    background-color: green;
+    background-color: #023020;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 1rem;
   } 
+
+  header.primary h1 a{
+    text-decoration: none;
+    color: ivory;
+  }
+
   header.primary nav ul{
     list-style: none;
     margin:0;
@@ -62,12 +76,17 @@ img{
   }
   header.primary nav li{
     padding-left: 1rem;
+    text-decoration: none;
+  }
+
+  header.primary nav a{
+    text-decoration: none;
   }
 
   h2{
     text-align: center;
-  }
-
-  footer{
-    flex-direction: column;
+    font-family: "Permanent Marker", cursive;;
+    font-size: 3rem;
+    padding-bottom: 0px;
+    margin-bottom: 0;
   }
