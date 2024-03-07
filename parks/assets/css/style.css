@@ -31,16 +31,18 @@ img{
   article.park{
     background-color: white;
     color: black;
-    opacity: 1;
-    position: absolute;
+    position: relative;
+    display: flow-root;
     margin-right: 2rem;
     padding-right: 1rem;
     border: 10px;
     border-style: dashed;
     border-color: #023020;
+    margin-bottom: 3rem;
   }
 
   article.park figure{
+    position: relative;
     float: left;
     clear: right;
     display: flex;
@@ -81,6 +83,8 @@ img{
 
   header.primary nav a{
     text-decoration: none;
+    color: ivory;
+    font-size: large;
   }
 
   h2{
@@ -89,4 +93,14 @@ img{
     font-size: 3rem;
     padding-bottom: 0px;
     margin-bottom: 0;
+  }
+
+  #footer{
+    text-align: end;
+    background-color: #023020;
+    color: ivory;
+    padding-right: 1rem;
+   position: absolute;
+   bottom: 0%;
+   width: 100%;
   }
