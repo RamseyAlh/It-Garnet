@@ -1,0 +1,114 @@
+body{
+    background-color: #F4EEE4;
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+  
+  h1{
+    display: inline-block;
+  }
+  
+  h2{
+    display: inline-block;
+    padding-left: 3rem;
+    color: #A1581E;
+    font-size: 4vw;
+  }
+  
+  h3{
+    display: inline-block;
+    padding-left: 3rem;
+    color: #A1581E;
+    font-size: 3vw;
+  }
+  .buff{
+    color:#762F12
+  }
+  
+  .retreat{
+    color:#113D6A
+  }
+  
+  a{
+    text-decoration: none;
+    color: #A1581E;
+  }
+  
+  header li {display: inline-block;
+  padding: 5px;
+  }
+  
+  p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #A1581E;
+  }
+  
+  h4 {
+    font-size: 3.5vw;
+    color: #A1581E;
+    text-align: center;
+  }
+  
+  h5{
+    font-size: 1.5vw;
+    color: #A1581E;
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+  
+  ul{
+    padding-left: 5rem;
+    padding-right: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: #A1581E;
+  }
+  
+  ol{
+    padding-left: 5rem;
+    padding-right: 3rem;
+    text-decoration: none;
+    color: #A1581E;
+  }
+
+  img{
+    max-width:100%;
+    border-radius: 50px;
+}
+
+.container{
+    margin:40px auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon{
+  color: orangered;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus{
+    color:rgb(100, 16, 16);
+}
+  
+  
