@@ -110,5 +110,10 @@ body{
 .slick-autoplay-toggle-button:focus{
     color:rgb(100, 16, 16);
 }
+
+.column{
+  float: left;
+  width: 50%;
+}
   
   
