@@ -1,48 +1,45 @@
-$( "#CircleForm" ).validate({
+$("#CircleForm").validate({});
 
-});
-
-function displayHypotenuse() {
-    // if the form is valid, then make the calculations
+function displayCircle(){
     if ($("#CircleForm").valid()) {
-        
-         document.getElementById("hypotenuse").innerHTML = "";
+        document.getElementById("diameter").innerHTML= "";
+        document.getElementById("circumference").innerHTML= "";
+        document.getElementById("area").innerHTML= "";
 
-         var leg1; // string representation of the leg1
-         var leg1fp; // floating point value of leg1
-         var leg2; // string representation of the leg1
-         var leg2fp; // floating point value of leg1
-         var hypotenuse;  // floating point hypotenuse
-         var result; // displayable result
+        var radius;
+        var radiusfp;
+        var diameter;
+        var circumference;
+        var area;
+        var result;
 
-         // read in the legs as a string
-         leg1 = document.getElementById("leg1").value;
-         leg2 = document.getElementById("leg2").value;
-
-         // Convert numbers from strings to Floating Point
-         leg1fp = parseFloat( leg1 ); 
-         leg2fp = parseFloat( leg2 ); 
-
-         // calculate the hypotenuse
-         hypotenuse = calcHypotenuse(leg1fp, leg2fp);
-
-         // display the hypotenuse
-         document.getElementById("hypotenuse").innerHTML = hypotenuse.toString();
-    }
+        radius = document.getElementById("radius").value;
+        radiusfp = parseFloat(radius);
+        diameter = calcDiameter(radius);
+        document.getElementById("diameter").innerHTML = diameter.toString();
+        circumference = calcCircumference(radius);
+        document.getElementById("circumference").innerHTML = circumference.toString();
+        area = calcArea(radius);
+        document.getElementById("area").innerHTML = area.toString();
+        }
 }
 
-  function calcHypotenuse (leg1value, leg2value)
-  // returns hypotenuse of a right triangle
-  // square root of leg1 squared plus leg2 squared
-  {
-      return Math.sqrt((leg1value*leg1value) + (leg2value*leg2value));
-  }
-  
-  function clearForm()
-{
-    document.getElementById("leg1").value = "";
-    document.getElementById("leg1error").innerHTML = "";
-    document.getElementById("leg2").value = "";
-    document.getElementById("leg2error").innerHTML = "";
-    document.getElementById("hypotenuse").innerHTML = "";
+function calcDiameter(r) {
+    return 2 * r;
+}
+
+function calcCircumference(r) {
+    return 2 * r * Math.PI;
+}
+
+function calcArea(r) {
+    return Math.PI * r * r;
+}
+
+function clearForm() {
+    document.getElementById("radius").value = "";
+    document.getElementById("radiuserror").innerHTML = "";
+    document.getElementById("diameter").innerHTML = "";
+    document.getElementById("circumference").innerHTML = "";
+    document.getElementById("area").innerHTML = "";
 }
