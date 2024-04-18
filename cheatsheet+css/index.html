@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My first HTML Document</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="This is the elevator pitch for your site" />
+  <meta name="author" content="Ramsey Alhajjaj" />
+  <meta name="keywords" content="UALR, UA Little Rock, IT Minor" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Garnet - HTML Introduction</title>
+  <link rel="stylesheet" href="assets/stylesheet.css"/>
+</head>
+
+<body class="test">
+  <h1>HTML5 Reference Document</h1>
+  <section id="forms">
+    <h2 class="section-heading">Forms</h2>
+    <form action="processing-script.php" method="get">
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <lable for="full-name">Full Name:</label><input type="text" id="full-name" name="full-name"/>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <label for="cmf">Favorite Car Manufacturer</label>
+        <select id="cmf" name="cmf">
+          <option value="null"> --- </option>
+          <option value="F">Ford</option>
+          <option value="D">Dodge</option>
+          <option value="H">Honda</option>
+          <option value="B">Bentley</option>
+          <option selected="selected"> --- </option>
+        </select>
+        <input type="submit" Value="Take Me to Your Leader" />
+      </fieldset> 
+    </form>
+  </section>
+  <section id="headings">
+    <h2 class="section-heading">Headings</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </section>
+  <section id="text-based-semantics">
+    <h2 class="section-heading">Text Based Semantics</h2>
+    <p>Lorem ipsum dolor sit amet, <em>consectetur adipiscing</em> elit. Fusce <strong>cursus turpis non ultricies</strong> dignissim. Nullam pretium tellus vel leo vulputate interdum. Curabitur tincidunt lorem lectus, <del>eget efficitur</del> libero ultricies at. Sed magna est, mattis vel ipsum non, egestas fringilla odio. Aliquam eu viverra mauris. Sed id fermentum mi, nec scelerisque lectus. Quisque <sup>lacus est</sup>, varius at <sub>varius at</sub>, ornare non orci. Aenean feugiat ipsum a purus facilisis porttitor. Donec quis maximus enim, id placerat ex. Phasellus in molestie ante. Aenean id massa vitae ligula condimentum dictum nec ac dui.
+</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid facilis, laboriosam quasi ipsum repudiandae eos aperiam omnis <hr />reprehenderit blanditiis saepe minima deserunt mollitia quo, minus molestiae. Pariatur, delectus tenetur.
+    </p>
+  <address>
+    Ramsey Alhajjaj<br />
+    112 Nice st.
+    Little Rock, AR, 72204
+  </address>
+  </section>
+  <section id="table">
+    <h2 class="section-heading">Table</h2>
+    <!-- Remove border Attribute before Publishing -->
+    <table border="1">
+      <caption>Grocery List</caption
+      <tr><th scope="col">Item</th><th scope="col">Quantity</th><th scope="col">Cost</th></tr>
+      <tr><td>Soda</td><td>12</td><td>.50</td></tr>
+      <tr><td>Soda</td><td>12</td><td>.50</td></tr>
+      <tr><td>Soda</td><td>12</td><td>.50</td></tr>
+    </table>
+  </section>
+  <section id="lists">
+    <h2 class="section-heading">Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol reversed>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+    <h3>Definition List</h3>
+    <dl>
+      <dt>Definition Term</dt>
+      <dd>Definition Desctription</dd>
+      <dd>Definition Desctription</dd>
+      <dd>Definition Desctription</dd>
+      <dt>Definition Term</dt>
+      <dd>Definition Desctription</dd>
+      <dd>Definition Desctription</dd>
+      <dd>Definition Desctription</dd>
+    </dl>
+    <h3>Nested List</h3>
+    <ol>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>List Item</li>
+        <ol start="5">
+          <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+        </ol>
+      <li>List Item</li>
+        <li>List Item</li>
+      </ul>
+      <li>List Item</li>
+      <li>List Item</li>
+    </ol>
+  </section>
+  <section id="hyperlink">
+    <h2 class="section-heading">Hyperlinks</h2>
+    <ul>
+      <li><a href="https://ualr.edu#news" target="_blank">Absolute Link</a></li>
+      <li><a href="folder/folder/file.html" title="Relative Link Example">Relative Link</a></li>
+      <li><a href="#headings">Anchor Link</a></li>
+      <li><a href="mailto:email@address.com">Email Link</a></li>
+    </ul>
+  </section>
+  <section id="quotes">
+    <h2 class="section-heading">Quotes</h2>
+    <h3>Blockquote</h3>
+    <blockquote>You must be the change you wish to see in the world.<cite> Mahatma Ghandi</cite></blockquote>
+    <h3>Inline Quote</h3>
+    <p><q>Honey tastes good!</q> said Pooh.</p>
+  </section>
+  <section id="images">
+    <h2 class="section-heading">Images</h2>
+    <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt"Little Rock Logo"/>
+  </section>
+  <section id="structural-elements">
+   <h2 class="section-heading">Structural Elements</h2>
+    <code>&lt;div&gt;</code>
+    <code>&lt;span&gt;</code>
+    <code>&lt;main&gt;</code>
+    <code>&lt;section&gt;</code>
+    <code>&lt;nav&gt;</code>
+    <code>&lt;article&gt;</code>
+    <code>&lt;aside&gt;</code>
+    <code>&lt;header&gt;</code>
+    <code>&lt;footer&gt;</code>
+    <code>&lt;figure&gt;</code>
+    <code>&lt;figcaption&gt;</code>
+    </section>
+</body>
+</html>
